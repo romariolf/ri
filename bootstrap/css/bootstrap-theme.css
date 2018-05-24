@@ -175,14 +175,15 @@
  }
  
  a {
-   color: #2A9FD6;
+   color: #6AAA01;
    text-decoration: none;
    background-color: transparent;
    -webkit-text-decoration-skip: objects;
+  
  }
  
  a:hover {
-   color: #1d7097;
+   color: #6AAA45;
    text-decoration: underline;
  }
  
