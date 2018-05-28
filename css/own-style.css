@@ -20,6 +20,10 @@
     margin: auto;
     top: 50%;
 }
+.hcenter{
+    margin: auto;
+    left:50%;
+}
 .main{
     height: 200px;
 }
