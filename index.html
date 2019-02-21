@@ -517,7 +517,52 @@
 
    			<h5>Nos envie uma mensagem!</h5>
 
-            <div class="fb-page" data-href="https://www.facebook.com/rominfo.st" data-tabs="messages" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/rominfo.st" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/rominfo.st">RomInfo - Soluções em TI</a></blockquote></div>
+				<!-- form -->
+            <form action="https://formspree.io/atendimento@rominfo.com.br" name="contactForm" id="contactForm" method="post">     			
+
+               <div class="form-field">
+ 					   <input name="contactName" type="text" id="contactName" placeholder="Nome" value="" minlength="2" required="">
+               </div>
+
+               <div class="row">
+                 	<div class="col-six tab-full">
+                 		<div class="form-field">
+                 			<input name="contactEmail" type="email" id="contactEmail" placeholder="E-mail" value="" required="">
+                 		</div>		      			   
+		            </div>
+	            	<div class="col-six tab-full">	            
+	            		<div class="form-field">
+	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Assunto" value="">
+	                  </div>		     				   
+		            </div>
+               </div>
+                                         
+               <div class="form-field">
+	              	<textarea name="contactMessage" id="contactMessage" placeholder="Mensagem" rows="10" cols="50" required=""></textarea>
+	            </div> 
+
+               <div class="form-field">
+                  <button class="submitform">Enviar</button>
+
+                  <div id="submit-loader">
+                     <div class="text-loader">Enviando...</div>                             
+       			      <div class="s-loader">
+							  	<div class="bounce1"></div>
+							  	<div class="bounce2"></div>
+							  	<div class="bounce3"></div>
+							</div>
+						</div>
+               </div>
+
+      		</form> <!-- end form -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div> 
+
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Sua mensagem foi enviada, responderemos em breve!<br>
+      		</div>	
 
          </div> <!-- end col-seven --> 
 
