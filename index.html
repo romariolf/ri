@@ -70,9 +70,35 @@
 	<!--Facebook Box JS Script-->
 	<div id="fb-root"></div>
 	<script async defer src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.2&appId=1325008744201729&autoLogAppEvents=1"></script>
+	<!-- Messenger Chatbox -->
+	<!-- Load Facebook SDK for JavaScript -->
+		<div id="fb-root"></div>
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      xfbml            : true,
+		      version          : 'v3.2'
+		    });
+		  };
 
-	<!-- header 
-   ================================================== -->
+		  (function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = 'https://connect.facebook.net/pt_BR/sdk/xfbml.customerchat.js';
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<!-- Your customer chat code -->
+		<div class="fb-customerchat"
+		  attribution=setup_tool
+		  page_id="658329554192862"
+		  theme_color="#6aaa01"
+		  logged_in_greeting="Olá, como podemos ajudar?"
+		  logged_out_greeting="Olá, como podemos ajudar?">
+		</div>
+	<!-- End Messenger Chatbox -->
+	<!-- header ================================================== -->
    <header> 
 
    	<div class="header-logo">
