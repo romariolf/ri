@@ -1489,9 +1489,9 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
   header .header-logo a {
-    width: 51px;
-    height: 24px;
-    background-size: 51px 24px;
+    width: 100px;
+    height: 67px;
+    background-size: 100px 67px;
   }
 }
 @media only screen and (max-width: 400px) {
